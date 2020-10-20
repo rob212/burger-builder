@@ -1,12 +1,14 @@
 import React from 'react';
 
-import Layout from './components/layout/layout';
+import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
+
+import Layout from './components/Layout/Layout';
 
 function App() {
   return (
     <div>
     <Layout>
-      <p>I am the child test for layout.</p>
+      <BurgerBuilder />
     </Layout>
     </div>
   );
