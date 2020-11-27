@@ -8,12 +8,12 @@ import styles from "./SideDrawer.module.css";
 
 const sideDrawer = (props) => {
   let attachedClasses = [styles.SideDrawer, styles.Close];
-  if (props.open) {
+  if (props.isOpen) {
     attachedClasses = [styles.SideDrawer, styles.Open];
   }
   return (
     <Fragment>
-      <Backdrop show={props.open} clicked={props.closed} />
+      <Backdrop show={props.isOpen} clicked={props.closed} />
       <div className={attachedClasses.join(" ")}>
         <div className={styles.Logo}>
           <Logo />
